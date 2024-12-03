@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // Import du Router et Routes
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Education from './components/Education/Education'; // Import de la page Education
 import Experience from './components/Experience/Experience';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
@@ -17,9 +18,10 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/education" element={<Education />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

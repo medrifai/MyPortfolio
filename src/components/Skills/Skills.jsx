@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Cpu, Database, Tools } from "lucide-react"; // Utilisation de "Tools" à la place de "Tool"
+import { Code, Cpu, Database, Wrench } from "lucide-react"; // Remplacer "Tools" par "Wrench"
 
 const Skills = () => {
   const skills = [
@@ -20,7 +20,7 @@ const Skills = () => {
     },
     {
       category: "Tools & Platforms",
-      icon: <Tools className="w-6 h-6 text-purple-500" />, // Mise à jour de l'icône
+      icon: <Wrench className="w-6 h-6 text-purple-500" />, // Mise à jour avec "Wrench"
       skills: ["Git/GitHub", "Docker", "Postman", "VS Code", "IntelliJ IDEA"],
     },
   ];

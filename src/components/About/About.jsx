@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, FileDown, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
 const About = () => {
@@ -63,6 +63,7 @@ const About = () => {
               efficient code.
             </motion.p>
 
+            {/* Social Links */}
             <motion.div variants={itemVariants} className="flex gap-4">
               <a
                 href="https://github.com/medrifai"
@@ -88,12 +89,20 @@ const About = () => {
               </a>
             </motion.div>
 
-            <motion.div variants={itemVariants}>
+            {/* Call to Action Buttons */}
+            <motion.div variants={itemVariants} className="flex gap-4 flex-wrap">
               <a
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300">
                 Get in Touch
                 <ArrowDown className="ml-2 w-4 h-4" />
+              </a>
+              <a
+                href="/assets/docs/cv.pdf" 
+                download
+                className="inline-flex items-center px-6 py-3 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition-colors duration-300">
+                Download CV
+                <FileDown className="ml-2 w-4 h-4" />
               </a>
             </motion.div>
           </div>
@@ -101,15 +110,14 @@ const About = () => {
           {/* Profile Image/Illustration */}
           <motion.div
             variants={itemVariants}
-            className="relative -top-10" // Ajout de -top-10 pour faire sauter l'image vers le haut
-          >
+            className="relative">
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-teal-400 rounded-full blur-2xl opacity-20" />
-              <div className="relative bg-gradient-to-br from-blue-50 to-teal-50 rounded-full overflow-hidden border-2 border-gray-100">
+              <div className="relative bg-gradient-to-br from-blue-50 to-teal-50 rounded-full overflow-hidden border-2 border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="/assets/images/Profile.me.jpeg"
                   alt="Profile"
-                  className="w-4/5 h-4/5 object-cover transform scale-90 mx-auto my-auto"
+                  className="w-4/5 h-4/5 object-cover transform scale-90 mx-auto my-auto hover:scale-95 transition-transform duration-300"
                   loading="lazy"
                 />
               </div>
