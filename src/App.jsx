@@ -9,7 +9,7 @@ import Skills from './components/Skills/Skills';
 
 function App() {
   return (
-    <Router> {/* Entourer l'application avec BrowserRouter */}
+    <Router> {}
       <Navbar />
       <Routes>
         <Route path="/" element={<About />} />

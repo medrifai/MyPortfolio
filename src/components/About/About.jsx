@@ -98,7 +98,7 @@ const About = () => {
                 <ArrowDown className="ml-2 w-4 h-4" />
               </a>
               <a
-                href="/assets/docs/cv.pdf" 
+                href="/assets/docs/CV_Mohamed_RIFAI.pdf"
                 download
                 className="inline-flex items-center px-6 py-3 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition-colors duration-300">
                 Download CV
