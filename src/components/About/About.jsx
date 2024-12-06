@@ -90,7 +90,9 @@ const About = () => {
             </motion.div>
 
             {/* Call to Action Buttons */}
-            <motion.div variants={itemVariants} className="flex gap-4 flex-wrap">
+            <motion.div
+              variants={itemVariants}
+              className="flex gap-4 flex-wrap">
               <a
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300">
@@ -108,18 +110,34 @@ const About = () => {
           </div>
 
           {/* Profile Image/Illustration */}
-          <motion.div
-            variants={itemVariants}
-            className="relative">
-            <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-teal-400 rounded-full blur-2xl opacity-20" />
-              <div className="relative bg-gradient-to-br from-blue-50 to-teal-50 rounded-full overflow-hidden border-2 border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="/assets/images/Profile.me.jpeg"
-                  alt="Profile"
-                  className="w-4/5 h-4/5 object-cover transform scale-90 mx-auto my-auto hover:scale-95 transition-transform duration-300"
-                  loading="lazy"
-                />
+          <motion.div variants={itemVariants} className="relative">
+            <div className="relative w-full aspect-square max-w-xs mx-auto group">
+              {/* Gradient Background Blur with Enhanced Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/40 to-teal-400/40 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-all duration-500" />
+
+              {/* Modern Container with Face-Focused Zoom and Bottom Crop */}
+              <div
+                className="relative bg-gradient-to-br from-blue-50/90 to-teal-50/90 rounded-full overflow-hidden 
+      border-2 border-white/30 shadow-lg hover:shadow-xl 
+      transition-all duration-300 ease-in-out">
+                <div className="relative w-full h-full">
+                  <img
+                    src="/assets/images/Profile.me.jpeg"
+                    alt="Profile"
+                    className="w-full h-full object-cover object-top 
+          transform scale-[1.6] translate-y-[17%] translate-x-[12%]
+          group-hover:scale-[1.7] 
+          transition-transform duration-300 
+          hover:brightness-110"
+                    loading="lazy"
+                  />
+                  {/* Gradient Mask to Crop Bottom */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-b from-transparent to-white 
+          via-transparent via-70% 
+          pointer-events-none"
+                  />
+                </div>
               </div>
             </div>
           </motion.div>
