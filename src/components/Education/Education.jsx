@@ -55,7 +55,7 @@ const Education = () => {
               2021 - 2023
             </div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Alternance DEUG en Mathématiques Appliquées
+              DEUG en Mathématiques Appliquées
             </h2>
             <p className="text-gray-600 mb-6">
               Diplôme DEUG en Mathématiques Appliquées à la Faculté des Sciences

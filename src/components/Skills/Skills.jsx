@@ -16,7 +16,7 @@ const Skills = () => {
     {
       category: "Database Management",
       icon: <Database className="w-6 h-6 text-orange-500" />,
-      skills: ["MySQL", "PostgreSQL", "MongoDB"],
+      skills: ["MySQL", "PostgreSQL", "SQL Server"],
     },
     {
       category: "Tools & Platforms",
